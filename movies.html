@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <style media="screen">
+
+
+    h1 {
+      color: #808000;
+      text-align: center;
+    }
+    p {
+      color: pink;
+      text-align: center;
+    }
+    html  {
+
+      background: #C0392B;
+    }
+    </style>
+
+  </head>
+
+
+
+  <body>
+    <p>  MOVIES!!!! </p>
+    <!-- <img src = "casa.jpg">
+    <img src = "v1.jpg">
+    <img src = "kill.png">
+    <img src = "space.jpg">
+    <img src = "limit.jpg">
+    <img src = "taxi.jpg"> -->
+
+    <img src="casa.jpg" id="mainimg" alt="">
+
+
+  <style media="screen">
+
+
+
+
+ </style>
+
+
+  </body>
+  <script type="text/javascript">
+  var sources = ["v1.jpg", "kill.png", "space.jpg", "limit.jpg", "taxi.jpg"]
+
+  var mainimg = document.getElementById("mainimg");
+  var i = 0;
+  setInterval(function() {
+    mainimg.src = sources[i];
+    i++;
+    if (i == sources.length) {
+      i = 0
+    }
+  }, 1000);
+
+  </script>
+</html>
